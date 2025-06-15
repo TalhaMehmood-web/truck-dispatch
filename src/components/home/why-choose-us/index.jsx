@@ -89,6 +89,7 @@ export default function WhyChooseUs() {
             width={500}
             height={400}
             className="w-full h-auto rounded-xl shadow-lg"
+            priority
           />
         </motion.div>
       </div>

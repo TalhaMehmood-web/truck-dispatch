@@ -16,6 +16,7 @@ const TruckCard = ({ image, title, description }) => {
           width={600}
           height={300}
           className="w-full h-72 object-cover"
+          priority
         />
         <div className="p-4 flex justify-between items-center">
           <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
