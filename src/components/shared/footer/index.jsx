@@ -1,0 +1,145 @@
+"use client";
+
+import { appName, contactInfo } from "@/constants/app";
+import { motion } from "framer-motion";
+import {
+  Facebook,
+  Instagram,
+  Twitter,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
+
+import Link from "next/link";
+
+const navLinks = [
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#services" },
+  { label: "Trucks", href: "#trucks" },
+  { label: "Testimonials", href: "#testimonials" },
+  { label: "Contact", href: "#contact" },
+];
+
+const Footer = () => {
+  return (
+    <footer
+      id="footer"
+      className="bg-[#1a1a1a] text-white pt-16 pb-6 px-4 sm:px-6 lg:px-20"
+    >
+      <div className="max-w-7xl mx-auto grid gap-10 md:grid-cols-3">
+        {/* Company Description */}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h3 className="text-xl font-bold mb-4">{appName}</h3>
+          <p className="text-sm text-white/80 leading-relaxed">
+            We’re an industry leader in dispatch service. We help our carriers
+            move more freight safely and cost-effectively every day! In
+            addition, we bring a great deal more to the table than just
+            dispatching. We work with you, as your partner, to provide the tools
+            you need to keep your trucks loaded and profitable.
+          </p>
+        </motion.div>
+
+        {/* Contact Details */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <h3 className="text-xl font-bold mb-4">CONTACT DETAILS</h3>
+          <ul className="space-y-3 text-white/80 text-sm">
+            <li className="flex items-start gap-2">
+              <MapPin className="mt-1 text-white" size={18} />
+              <span>{contactInfo.location}</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <Phone className="mt-1 text-white" size={18} />
+              <a
+                href="tel:+19036770493"
+                className="hover:text-yellow-400 transition-colors"
+              >
+                {contactInfo.conatctNumber}
+              </a>
+            </li>
+            <li className="flex items-start gap-2">
+              <Mail className="mt-1 text-white" size={18} />
+              <a
+                href="mailto:info@apexdispatchllc.com"
+                className="hover:text-yellow-400 transition-colors"
+              >
+                {contactInfo.email}
+              </a>
+            </li>
+          </ul>
+        </motion.div>
+
+        {/* Quick Links */}
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          <h3 className="text-xl font-bold mb-4">QUICK LINKS</h3>
+          <ul className="space-y-3 text-white/80 text-sm">
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <Link
+                  href={link.href}
+                  className="hover:text-yellow-400 transition-colors"
+                >
+                  ➤ {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="mt-10 border-t border-white/20 pt-6 flex flex-col lg:flex-row items-center justify-between text-white/60 text-sm gap-4">
+        <p>
+          © Copyright {new Date().getFullYear()} | Apex Dispatch LLC |
+          <Link href="/privacy-policy" className="hover:text-white underline">
+            Privacy Policy
+          </Link>
+          <Link href="/terms" className="hover:text-white underline">
+            Terms & Conditions
+          </Link>
+          | Design & Developed by
+          <span className="font-semibold text-white">FQ DIGITALS</span>
+        </p>
+
+        {/* Social Icons */}
+        <div className="flex gap-4">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            className="hover:text-yellow-400"
+          >
+            <Facebook size={20} />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            className="hover:text-yellow-400"
+          >
+            <Twitter size={20} />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            className="hover:text-yellow-400"
+          >
+            <Instagram size={20} />
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
