@@ -5,10 +5,9 @@ export default function TestimonialSlider() {
   return (
     <section id="testimonials" className=" w-full mt-24">
       <SectionTitle text="Testimonials" className="mb-8" />
-      <SectionTitle
-        className="text-base text-[#7799BF] mb-2 font-light"
-        text="Here’s what our happy drivers had to say about our services:"
-      />
+      <p className="text-base text-center text-[#7799BF] mb-2 font-light">
+        Here’s what our happy drivers had to say about our services
+      </p>
       <TestimonialCarousel />
     </section>
   );
