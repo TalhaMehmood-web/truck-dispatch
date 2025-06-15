@@ -62,7 +62,7 @@ const BookmeDialog = ({ open, onOpenChange }) => {
                   <p className="text-sm font-medium text-muted-foreground">
                     {item.label}
                   </p>
-                  <p className="text-base font-semibold text-foreground">
+                  <p className=" text-xs sm:text-base font-semibold text-foreground">
                     {item.value}
                   </p>
                 </div>
