@@ -21,6 +21,7 @@ const TestimonialCard = ({ data, index }) => {
           width={50}
           height={50}
           className="rounded-full object-cover size-24 border-2 border-white"
+          priority
         />
         <div>
           <h4 className="font-semibold text-lg">{data.name}</h4>

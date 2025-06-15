@@ -21,7 +21,7 @@ const GetYourFirstDispatch = () => {
 
       <div className="absolute inset-0 flex items-center  px-4 sm:px-8 md:px-16 text-white bg-black/30">
         {/* Left Text */}
-        <ContentWrapper className="flex items-center justify-between">
+        <ContentWrapper className="flex items-center gap-10 flex-wrap justify-between">
           <div className="flex flex-col gap-4">
             <h2 className="text-lg sm:text-xl md:text-4xl font-bold drop-shadow">
               Get Your First Dispatch Now

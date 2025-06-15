@@ -11,6 +11,7 @@ const VideoPlayer = () => {
         autoPlay
         muted
         playsInline
+        preload="auto"
       />
     </div>
   );

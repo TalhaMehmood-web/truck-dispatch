@@ -4,3 +4,4 @@ export const contactInfo = {
   location: "5900 Balcones Drive, Suite 100, Austin, TX, 78731",
 };
 export const appName = "Apex Dispatch LLC";
+export const APP_URL = "https://apex-dispatch.netlify.app/";
