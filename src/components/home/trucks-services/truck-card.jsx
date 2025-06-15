@@ -9,7 +9,7 @@ const TruckCard = ({ image, title, description }) => {
       whileHover={{ scale: 1.03 }}
       className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200 transition-all duration-300"
     >
-      <div onClick={() => setOpen(!open)} className="cursor-pointer">
+      <div className="cursor-pointer">
         <Image
           src={image}
           alt={title}
