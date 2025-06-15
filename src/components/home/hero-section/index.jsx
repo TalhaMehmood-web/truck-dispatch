@@ -6,13 +6,13 @@ import { appName } from "@/constants/app";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full aspect-[16/9] sm:aspect-[16/7] md:aspect-[16/6] lg:aspect-video overflow-hidden">
       {/* Video as background */}
       <VideoPlayer />
 
       {/* Overlay Content */}
 
-      <div className="absolute inset-0 z-10 flex items-center justify-between px-10 py-20 text-white bg-black/40">
+      <div className="absolute inset-0 z-10 hidden  lg:flex items-center justify-between px-10 py-20 text-white bg-black/40">
         {/* Left Side Text */}
         <ContentWrapper className=" flex items-center justify-between">
           <div className="max-w-xl">
@@ -23,7 +23,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Side Dispatcher */}
-          <div className="w-[90%] max-w-sm">
+          <div className="w-[90%] lg:block hidden max-w-sm">
             <DispatchServices />
           </div>
         </ContentWrapper>

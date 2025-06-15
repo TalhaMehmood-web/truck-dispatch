@@ -7,17 +7,20 @@ import TestimonialSlider from "@/components/home/testimonial-section";
 import TruckGrid from "@/components/home/trucks-services";
 import WhyChooseUs from "@/components/home/why-choose-us";
 import BottomNavbar from "@/components/shared/navbar/bottom-nav";
+import ResponsiveNavbar from "@/components/shared/navbar/responsive-navbar";
 import TopNavbar from "@/components/shared/navbar/top-nav";
 import Spacer from "@/components/shared/spacer";
+import { AlignRight } from "lucide-react";
 import React from "react";
 
 const HomePageView = () => {
   return (
     <div className="relative">
       <TopNavbar />
-      <div className="absolute top-10 w-full transition-all duration-300 z-50 mb-">
+      <div className=" hidden lg:block  lg:absolute top-10 w-full transition-all duration-300 z-50">
         <BottomNavbar />
       </div>
+      <ResponsiveNavbar />
       <div>
         <HeroSection />
       </div>

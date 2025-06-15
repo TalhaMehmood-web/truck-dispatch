@@ -65,7 +65,7 @@ const TestimonialCarousel = () => {
               key={index}
               className="!w-[300px] sm:!w-[400px] md:!w-[500px]"
             >
-              <TestimonialCard data={item} />
+              <TestimonialCard index={index} data={item} />
             </SwiperSlide>
           ))}
         </Swiper>
