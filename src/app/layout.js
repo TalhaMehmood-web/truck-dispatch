@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import Footer from "@/components/shared/footer";
-import { APP_URL } from "@/constants/app";
+import { APP_URL, appName } from "@/constants/app";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Salman Truck Dispatch Company",
+  title: appName,
   description:
     "Reliable and efficient truck dispatch services across the US — helping carriers stay loaded and stress-free.",
   keywords: [

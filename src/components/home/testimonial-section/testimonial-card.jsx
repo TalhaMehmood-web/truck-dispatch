@@ -11,7 +11,7 @@ const TestimonialCard = ({ data, index }) => {
       className="relative bg-slate-50 border-slate-300 rounded-3xl text-black p-6 max-w-lg mx-auto shadow-sm min-h-[400px]"
     >
       <div className="absolute top-4 left-4 text-6xl">“</div>
-      <p className="text-base sm:text-lg font-light leading-relaxed mt-10 mb-6">
+      <p className=" min-h-[150px] text-base sm:text-lg font-light leading-relaxed mt-10 mb-6">
         <HighlightedText text={data.quote} highlights={data.highlights} />
       </p>
       <div className="flex items-center gap-4 mt-4">

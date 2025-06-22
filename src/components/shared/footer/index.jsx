@@ -9,6 +9,7 @@ import {
   Mail,
   MapPin,
   Phone,
+  Linkedin,
 } from "lucide-react";
 
 import Link from "next/link";
@@ -102,7 +103,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="mt-10 border-t border-white/20 pt-6 flex flex-col lg:flex-row items-center justify-between text-white/60 text-sm gap-4">
         <p>
-          © Copyright {new Date().getFullYear()} | Apex Dispatch LLC |
+          © Copyright {new Date().getFullYear()} |{appName} |
           <Link href="/privacy-policy" className="hover:text-white underline">
             Privacy Policy
           </Link>
@@ -110,32 +111,25 @@ const Footer = () => {
             Terms & Conditions
           </Link>
           | Design & Developed by
-          <span className="font-semibold text-white">FQ DIGITALS</span>
+          <span className="font-semibold text-white"> Talha Mehmood</span>
         </p>
 
         {/* Social Icons */}
         <div className="flex gap-4">
-          <a
-            href="https://facebook.com"
+          <Link
+            href="https://www.facebook.com/share/16WcxAcagG/?mibextid=wwXIfr"
             target="_blank"
             className="hover:text-yellow-400"
           >
             <Facebook size={20} />
-          </a>
-          <a
-            href="https://twitter.com"
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/liberty-lane-dispatch-llc-55a212370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             target="_blank"
             className="hover:text-yellow-400"
           >
-            <Twitter size={20} />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            className="hover:text-yellow-400"
-          >
-            <Instagram size={20} />
-          </a>
+            <Linkedin size={20} />
+          </Link>
         </div>
       </div>
     </footer>
