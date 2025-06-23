@@ -36,13 +36,26 @@ const Footer = () => {
           transition={{ duration: 0.5 }}
         >
           <h3 className="text-xl font-bold mb-4">{appName}</h3>
-          <p className="text-sm text-white/80 leading-relaxed">
-            We’re an industry leader in dispatch service. We help our carriers
-            move more freight safely and cost-effectively every day! In
-            addition, we bring a great deal more to the table than just
-            dispatching. We work with you, as your partner, to provide the tools
-            you need to keep your trucks loaded and profitable.
-          </p>
+          <div className="text-sm text-white/80 leading-relaxed space-y-4">
+            <p>
+              We are a leading independent truck dispatch company dedicated to
+              helping carriers move freight safely, efficiently, and profitably.
+            </p>
+            <p>
+              Our dispatch service goes beyond just booking loads, we become
+              your trusted partner in business. We provide the tools and support
+              needed to keep your trucks on the road and your operations running
+              smoothly.
+            </p>
+            <p>
+              Every carrier is assigned a dedicated dispatcher who knows your
+              business inside and out, acting as your single point of contact.
+              There’s absolutely no forced dispatch, your priorities come first.
+              <br />
+              Let us handle the load hunting while you drive. Get in touch today
+              to start dispatching smarter.
+            </p>
+          </div>
         </motion.div>
 
         {/* Contact Details */}

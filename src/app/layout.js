@@ -24,6 +24,7 @@ export const metadata = {
   authors: [{ name: "Salman Truck Dispatch Company" }],
   creator: "Salman Truck Dispatch Company",
   metadataBase: new URL(`${APP_URL}`),
+
   openGraph: {
     title: "Salman Truck Dispatch Company",
     description:
